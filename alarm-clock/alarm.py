@@ -3,7 +3,6 @@
 from playsound import playsound as ps
 import time
 
-
 # Code to clearing terminal
 CLEAR = "\033[2J" # Clears terminal
 CLEAR_AND_RETURN = "\033[H" # Clears terminal after every new line is executed
