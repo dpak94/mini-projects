@@ -10,6 +10,7 @@ import random, time, os
 os.chdir(r'quiz-game-2/src')
 # print(os.getcwd())
 
+""" 
 # Pleasantries
 print("Welcome to Geopolitical Quiz!!!")
 print("Would you like to participate in this quiz? ")
@@ -17,11 +18,13 @@ play = input().lower()
 
 if play not in ['yes', 'y', '1']:
     quit()
-
+ """
 # Sourcing data from given dataset - country-list.csv
-df = pd.read_csv("./data/country-list.csv")
+df = pd.read_csv("../data/country-list.csv")
 
 print(df.columns)
 # 5 questions were given in this quiz
 
-print(df.sample())
+q_data = df.sample(n = 5, replace = False)
+
+print(q_data['country'])
