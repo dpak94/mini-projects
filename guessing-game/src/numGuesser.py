@@ -1,4 +1,4 @@
-# Guessing Game with 3 choices to guess the correct number.
+# Guessing Game with 3 choices to guess the correct number
 
 import random
 print("Welcome to guessing game")
@@ -8,7 +8,7 @@ play = input("Would you like to play the game? ")
 if play.lower() not in ['yes', 'y', '1']:
     quit()
 
-# Generated Random Number within the range
+# Generated Random Number within the range 1 to 10
 genNum = random.randint(1, 10)
 chance = 1
 
