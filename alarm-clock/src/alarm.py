@@ -1,7 +1,9 @@
 # Alarm Clock mini project
 
 from playsound import playsound as ps
-import time
+import time, os
+
+os.chdir(r'alarm-clock/src')
 
 # Code to clearing terminal
 CLEAR = "\033[2J" # Clears terminal
