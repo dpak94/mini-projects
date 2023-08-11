@@ -23,7 +23,7 @@ def alarm(sec):
         sec_left = time_left % 60
 
         print(f"{CLEAR_AND_RETURN}Alarm will sound in: {minutes_left:02d} : {sec_left :02d}")
-    ps("ringtone.mp3")
+    ps("../data/bf3.mp3")
 
 minutes = int(input("How many minutes to wait? : "))
 seconds = int(input("How many seconds to wait? : "))
